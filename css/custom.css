@@ -1,0 +1,54 @@
+/* Custom CSS (not from template) */
+
+/* Hide social icons when header is transparent, show when sticky */
+.primary-menu .social-icons {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.primary-menu.sticky-on-top .social-icons {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Dark theme for vertical nav tabs */
+.nav-tabs.flex-column .nav-item .nav-link {
+    background-color: #191f24;
+    border-color: #2a2f35;
+    color: #7b8084;
+}
+.nav-tabs.flex-column .nav-item .nav-link.active {
+    background-color: #111418;
+    color: #fff;
+}
+.nav-tabs.flex-column {
+    border-right-color: #2a2f35;
+}
+
+/* GitHub icon hover color */
+.social-icons li:hover.social-icons-github a,
+.social-icons.social-icons-colored li.social-icons-github a {
+    color: #909692;
+}
+
+.header-logo-text {
+    font-size: 1.5em; /* Typical font size for h2 */
+    color: #76B900;
+    font-family: 'Impact', sans-serif;
+}
+
+.hero-wrap .hero-portrait {
+    object-fit: cover;
+}
+
+.navbar-overlay .navbar-collapse .navbar-nav {
+    min-width: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (max-width: 575.98px) {
+    .section .text-24 {
+        font-size: 12vw !important;
+    }
+}
